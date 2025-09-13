@@ -22,7 +22,7 @@ class Solution {
             return;
         }
         for(int c=0;c<board.length;c++){
-            if(isSafe(board,r,c)){
+            if(isSafe(board,r,c)){//checking wheather it is safe to put queen or not
                 board[r][c] = true;
                 queens(board,r+1,sol);
                 board[r][c]=false;
