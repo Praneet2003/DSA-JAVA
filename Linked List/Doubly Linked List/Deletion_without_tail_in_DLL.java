@@ -19,8 +19,9 @@ class Deletion_without_tail_in_DLL{
             temp = temp.next;
             i++;
         }
-        if(temp==null && temp.next==null){
+        if(temp==null || temp.next==null){
             System.out.println("Invalid position, Out of bound");
+            return;
         }
         if(temp.next.next!=null){
             temp.next = temp.next.next;
@@ -36,6 +37,11 @@ class Deletion_without_tail_in_DLL{
     public void Delete_end(){
         if(head==null){
             System.out.println("\nError: The DLL is empty");
+            return;
+        }
+        if(head.next==null){
+            head = null;
+            size--;
             return;
         }
         Node temp = head;
