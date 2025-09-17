@@ -23,7 +23,7 @@ class Deletion_without_tail_in_DLL{
             System.out.println("Invalid position, Out of bound");
             return;
         }
-        if(temp.next.next!=null){
+        if(temp.next.next!=null){//If only one node is present 
             temp.next = temp.next.next;
             temp.next.prev = temp;
             size--;
