@@ -1,6 +1,6 @@
 class N_Queen{
     public static void main(String[] args) {
-        int n =8;
+        int n =4;
         boolean arr[][] = new boolean[n][n];
         int count = Queens(arr, 0);
         System.out.println(count);
@@ -28,13 +28,14 @@ class N_Queen{
                 return false;
             }
         }
-        //diagonal left.
+        //diagonal left ckeck krega.
         int maxleft = Math.min(r,c);
         for(int i=1;i<=maxleft;i++){
             if(board[r-i][c-i]){
                 return false;
             }
         }
+        //diagonal right check krega
         int maxright = Math.min(r,board.length-1-c);
         for(int i=1;i<=maxright;i++){
             if(board[r-i][c+i]){
