@@ -10,17 +10,17 @@ class N_Knights{
             System.out.println("");
             return;
         }
-        if(c==board.length){
-            knights(board, r+1, 0, target);
+        if(c==board.length){//when you reach at the end of column
+            knights(board, r+1, 0, target);//move in next row
             return;
         }
-        if(r>=board.length){
+        if(r>=board.length){//if you reach at the end row i.e STOP!
             return;
         }
         if(isSafe(board,r,c)){
             board[r][c]=true;
             knights(board, r, c+1, target-1);//if safe then store the ans and move ahead.
-            board[r][c]=false;
+            board[r][c]=false;//backtracking
         }
         knights(board, r, c+1, target);//it it is not safe then also move ahead.
     }
