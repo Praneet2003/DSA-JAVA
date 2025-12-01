@@ -100,7 +100,7 @@ class Deletion_in_singly_LL{
             temp = temp.next;
             i++;
         } 
-        if(temp.next==null){
+        if(temp.next==null && temp.next.next==null){
             System.out.print("Invalid position");
             return;
         }
