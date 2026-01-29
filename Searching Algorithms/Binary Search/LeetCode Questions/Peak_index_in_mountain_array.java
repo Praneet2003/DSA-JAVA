@@ -7,6 +7,7 @@ class Peak_index_in_mountain_array{
         int s = 0;
         int e = arr.length - 1;
         int mid = s+(e-s)/2; 
+       // you can either find pivot or
         while(s<e){
             // you can also use s<=e but in that case if(arr[mid]>arr[mid+1])=> e = mid;
             if(arr[mid]<arr[mid+1]){
