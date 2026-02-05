@@ -5,7 +5,7 @@ class largest_element_in_Rotated_sorted{
         System.out.println(res);
     }
     public static int findpivot(int arr[]){
-        //this method of finding the pivot is only applicable for the 
+        //.this method of finding the pivot is only applicable for the 
         int s = 0;
         int e = arr.length - 1;
         while(s<=e){
