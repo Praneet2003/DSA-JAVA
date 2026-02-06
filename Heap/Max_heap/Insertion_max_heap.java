@@ -1,6 +1,6 @@
 import java.util.*;
 public class Insertion_max_heap {
-    public static void main(String[] args) {
+        public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Heap obj = new Heap();
         for(int i=0;i<9;i++){
@@ -12,6 +12,7 @@ public class Insertion_max_heap {
 }
 class Heap{
     ArrayList<Integer> list = new ArrayList<>();
+    //insertion in heap takes time of O(log n)
     public void insert(int val){
         list.add(val);
         upheap(list.size()-1);
@@ -35,4 +36,4 @@ class Heap{
     }
 }
 // Input: 9 9 11 11 2 3 4 2 1
-// Output: 11 11 9 9 2 3 4 2 1
+// Output: 11 11 9 9 2 3 4 2 1 (max element at the root acess time is O(1))
