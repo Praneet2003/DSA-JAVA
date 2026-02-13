@@ -30,9 +30,10 @@ public class Insert_at_bottom_of_Stack {
         while(stack.size()!=0){
             temp.push(stack.pop());
         }
-        temp.push(v);
+        temp.push(v);// remove all element from stack then push the value at the end 
         while(temp.size()!=0){
-            stack.push(temp.pop());
+            stack.push(temp.pop());// pushing all remaining element again in the stack
+            
         }
         return stack;
     }
