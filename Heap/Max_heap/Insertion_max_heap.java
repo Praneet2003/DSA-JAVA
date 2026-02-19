@@ -22,7 +22,7 @@ class Heap{
     }
     private void upheap(int i){
         int p = parent(i);
-        if(list.get(p)<list.get(i)){
+        if(list.get(p)<list.get(i)){//swap.
             int temp = list.get(p);
             list.set(p,list.get(i));
             list.set(i,temp);
