@@ -39,7 +39,7 @@ class Solution{
             int temp = list.get(0);
             list.set(0,list.get(i));
             list.set(i,temp);
-            heapify(list,0,i);
+            heapify(list,0,i);//swapping last ajd the first element and decrease the size
         }
         display(list);
     }
