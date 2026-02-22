@@ -32,7 +32,7 @@ class Solution{
     }
     public void HeapSort(List<Integer> list){
         int n = list.size();
-        for(int i = n-1;i>=0;i--){
+        for(int i = n/2-1;i>=0;i--){
             heapify(list,i,n);
         }
         for(int i = n-1;i>0;i--){
