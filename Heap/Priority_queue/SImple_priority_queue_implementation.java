@@ -13,7 +13,7 @@ public class SImple_priority_queue_implementation {
             System.out.print(queue.peek()+" ");
             queue.poll();
         }
-        System.out.println("\nThe other implementaion of PrioriyQueue with defined priority");
+        System.out.println("\n The other implementaion of PrioriyQueue with defined priority");
         PriorityQueue<Integer> queue1 = new PriorityQueue<>(Collections.reverseOrder());
         queue1.offer(10);
         queue1.offer(1);
