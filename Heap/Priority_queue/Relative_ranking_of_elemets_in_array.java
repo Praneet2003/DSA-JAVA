@@ -16,7 +16,7 @@ public class Relative_ranking_of_elemets_in_array {
     }
 }
 class Solution {
-    class Pair implements Comparable<Pair> {
+    class Pair implements Comparable<Pair> {//java doesn't provide inbuilt pair to pass inside PriorityQueue, we have to define it seperately
         int first;
         int second;
         Pair(int f, int s) {
