@@ -45,7 +45,7 @@ class Solution{
                 }
             }
         }
-        if(index!=v){
+        if(index!=v){//when cycle exist index keeps on incremeting and not equal to v
             return new ArrayList<>();
         }
         return res;
