@@ -4,6 +4,9 @@ class check_Power_of_2{
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         boolean ans = (n&(n-1))==0;
+        if(n==0){
+            ans = false;
+        }
         if(ans==true){
             System.out.println("The Number "+n+" is power of 2.");
         }else{
