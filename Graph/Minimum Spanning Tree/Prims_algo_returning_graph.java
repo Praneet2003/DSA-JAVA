@@ -45,7 +45,7 @@ class Solution{
                 continue;
             }
             visited[u] = true;
-            if(p.parent!=-1){
+            if(p.parent!=-1){//if the node is itselt starting node
                 g1.addEdge(p.parent, u, p.wt);
             }
             for(Edge e: adj.get(u)){
