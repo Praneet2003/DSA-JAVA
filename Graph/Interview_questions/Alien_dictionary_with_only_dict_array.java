@@ -21,8 +21,8 @@ class Solution{
         for(int i = 0;i<k;i++){
             list.add(new ArrayList<>());
         }
-        Map<Character,Integer> map = new HashMap<>();
-        Map<Integer,Character> rev = new HashMap<>();
+        Map<Character,Integer> map = new HashMap<>();//maps char with index
+        Map<Integer,Character> rev = new HashMap<>();// maps index with char
         int index=0;
         for(char c:set){
             map.put(c,index);
