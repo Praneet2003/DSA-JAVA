@@ -19,9 +19,9 @@ class Solution{
         boolean visited[][] = new boolean[n][m];
         for(int i = 0;i<n;i++){
             for(int j = 0;j<m;j++){
-                if(arr[i][j]=='1' && !visited[i][j]){
+                if(arr[i][j]=='1' && !visited[i][j]){// you start from one land place then visit all its neighbour land
                     dfs(i,j,visited,arr);
-                    count++;
+                    count++;//count that whole peice of land
                 }
             }
         }
