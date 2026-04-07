@@ -11,7 +11,7 @@ public class Max_sum_with_no_two_adjacent_element_Optimized {
         System.out.println(findmax(n, arr, dp));
     }
     public static int findmax(int n, int arr[], int dp[]){
-        if(n==0){// no element is present in arr.
+        if(n==0){// no element is present in array.
             return 0;
         }
         if(n==1){//only one element present.
