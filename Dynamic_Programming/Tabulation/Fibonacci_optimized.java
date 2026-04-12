@@ -6,8 +6,8 @@ public class Fibonacci_optimized {
         System.out.println(n+" th fibonacci number is: "+fibo(n));
     }
     public static int fibo(int n){
-        int prev2 = 0;
-        int prev1 = 1;
+        int prev2 = 0;//storing prev-> prev
+        int prev1 = 1;//storing prev
         int curr = -1;
         for(int i=2;i<=n;i++){
             curr = prev1+prev2;
