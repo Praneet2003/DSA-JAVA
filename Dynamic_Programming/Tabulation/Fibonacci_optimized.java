@@ -6,6 +6,9 @@ public class Fibonacci_optimized {
         System.out.println(n+" th fibonacci number is: "+fibo(n));
     }
     public static int fibo(int n){
+        if(n<=1){
+            return n;
+        }
         int prev2 = 0;
         int prev1 = 1;
         int curr = -1;
