@@ -13,9 +13,9 @@ class Fibonacci_series_using_DP{
             return n;
         }
         if(DP[n]!=-1){
-            return DP[n];
+            return DP[n];//already calucted answer from previous subproblem
         }
         DP[n] = fibo(n-1)+fibo(n-2);
-        return DP[n];
+        return DP[n];//returning the nth fibonacci number
     }
 }
