@@ -24,7 +24,7 @@ class Solution{
             return dp[n];
         }
         int min = Integer.MAX_VALUE;
-        for(int i = 1;i<=k;i++){
+        for(int i = 1;i<=k;i++){//loop for jumping to k steps
             if(n-i>=0){
                 int steps = frog_jump(n-i, k, height)+(int)Math.abs(height[n]-height[n-i]);
                 min = Math.min(min,steps);
