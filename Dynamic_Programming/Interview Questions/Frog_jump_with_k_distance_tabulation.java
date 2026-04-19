@@ -25,7 +25,7 @@ class Solution{
             int min = Integer.MAX_VALUE;
             for(int j =1;j<=k;j++){
                 if(i-j>=0){
-                    int steps = dp[i-j]+Math.abs(height[i]-height[i-j]);
+                    int steps = dp[i-j]+Math.abs(height[i]-height[i-j]);//no recursion calls
                     min = Math.min(min,steps);
                 }
             }
