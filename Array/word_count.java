@@ -2,7 +2,7 @@ import java.util.*;
 public class word_count {
     public static void main(String[] args) {
         String text = "Hey i am praneet as well as i am Anshu";
-        String words[] = text.split(" ");
+        String words[] = text.split(" ");//converts this text into an array of string type
         HashMap<String, Integer> map = new HashMap<>();
         for(String word: words){
             if(map.containsKey(word)){
