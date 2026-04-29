@@ -17,7 +17,7 @@ class Solution{
         return no_of_paths(m-1,n-1,dp);
     }
     public int no_of_paths(int m, int n, int dp[][]){
-        if(m==0 || n==0){
+        if(m==0 || n==0){//if you either each at last row or col,i.e one path exists
             return 1;
         }
         if(m<0 || n<0){
