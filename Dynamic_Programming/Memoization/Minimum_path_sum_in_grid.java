@@ -11,7 +11,7 @@ class Minimum_path_sum_in_grid{
             }
         }
         Solution obj = new Solution();
-        System.out.println("THe minimim cost to reach from (0,0) to (n-1,m-1) is: "+obj.find_min_cost(arr));
+        System.out.println("THe minimim cost to reach from (0,0) to (n-1,m-1) is: "+obj.find_min_cost(arr)+".");
     }
 }
 class Solution{
