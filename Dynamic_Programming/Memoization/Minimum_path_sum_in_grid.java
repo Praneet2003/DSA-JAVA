@@ -26,7 +26,7 @@ class Solution{
     }
     public int min_path(int n, int m, int arr[][], int dp[][]){
         if(n<0||m<0){
-            return Integer.MAX_VALUE;
+            return Integer.MAX_VALUE;//
         }
         if(n==0 && m==0){
             return arr[0][0];
