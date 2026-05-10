@@ -19,7 +19,7 @@ class Solution{
         int n = arr.length;
         int dp[][] = new int[n][n];
         for(int i=0;i<n;i++){
-            dp[n-1][i] = arr[n-1][i];
+            dp[n-1][i] = arr[n-1][i];//last row is the base case
         }
         for(int i=n-2;i>=0;i--){
             for(int j = 0;j<=i;j++){
