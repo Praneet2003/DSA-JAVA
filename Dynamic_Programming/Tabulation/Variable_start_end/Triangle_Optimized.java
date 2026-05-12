@@ -19,7 +19,7 @@ class Solution{
         int n = arr.length;
         int prev[] = new int[n];
         for(int i=0;i<n;i++){
-            prev[i] = arr[n-1][i];
+            prev[i] = arr[n-1][i];//stores the lowest row, as the base case. 
         }
         for(int i=n-2;i>=0;i--){
             int curr[] = new int[n];
