@@ -17,8 +17,8 @@ class Solution{
                 if(i==0 && j==0){
                     curr[j] = 1;//base case
                 }else{
-                    int up = i>0?prev[j]:0;
-                    int left = j>0?curr[j-1]:0;
+                    int up = i>0?prev[j]:0;//getting up answer from prev row
+                    int left = j>0?curr[j-1]:0;//getting left answer fromt the current row
                     curr[j] = up+left;
                 }
             }
