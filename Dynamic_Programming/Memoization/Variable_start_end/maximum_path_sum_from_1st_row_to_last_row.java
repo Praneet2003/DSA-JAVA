@@ -25,7 +25,7 @@ class Solution{
             Arrays.fill(row,-1);
         }
         for(int i=0;i<m;i++){
-            max = Math.max(max,max_path(0,i,arr,dp));
+            max = Math.max(max,max_path(0,i,arr,dp));//getting all possiblities for maximum starting from the first row
         }
         return max;
     }
@@ -34,7 +34,7 @@ class Solution{
             return Integer.MIN_VALUE;
         }
         if(i==arr.length-1){
-            return arr[i][j];
+            return arr[i][j];//reach last row i.e base case
         }
         if(dp[i][j]!=-1){
             return dp[i][j];
