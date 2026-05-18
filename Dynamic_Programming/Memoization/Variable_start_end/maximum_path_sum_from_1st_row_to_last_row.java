@@ -25,7 +25,7 @@ class Solution{
             Arrays.fill(row,-1);
         }
         for(int i=0;i<m;i++){
-            max = Math.max(max,max_path(0,i,arr,dp));//getting all possiblities for maximum starting from the first row
+            max = Math.max(max,max_path(0,i,arr,dp));//getting all possiblities for maximum starting from the first row.
         }
         return max;
     }
