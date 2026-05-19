@@ -34,7 +34,7 @@ class Solution{
             return Integer.MIN_VALUE;
         }
         if(i==arr.length-1){
-            return arr[i][j];//reach last row i.e base case
+            return arr[i][j];//reach last row i.e base case.
         }
         if(dp[i][j]!=-1){
             return dp[i][j];
