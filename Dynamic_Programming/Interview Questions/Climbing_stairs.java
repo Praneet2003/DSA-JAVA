@@ -18,7 +18,7 @@ class Solution{
         if(n<=1){
             return 1;
         }
-        if(dp[n]!=-1)b{
+        if(dp[n]!=-1){
             return dp[n];
         }
         dp[n] = getno_of_ways(n-1)+getno_of_ways(n-2);
