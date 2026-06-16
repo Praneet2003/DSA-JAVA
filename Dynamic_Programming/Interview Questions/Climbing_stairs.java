@@ -21,7 +21,7 @@ class Solution{
         if(dp[n]!=-1){
             return dp[n];
         }
-        dp[n] = getno_of_ways(n-1)+getno_of_ways(n-2);
+        dp[n] = getno_of_ways(n-1)+getno_of_ways(n-2);//recursion calls for n-1 and n-2 steps
         return dp[n];
     }
 }
