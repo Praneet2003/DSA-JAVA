@@ -15,7 +15,7 @@ public class Climbing_stairs {
 class Solution{
     int dp[];
     public int getno_of_ways(int n){
-        if(n<=1){//base case, when you are at the step 1 or 0.
+        if(n<=1){//base case, when you are at the step 1 or 0
             return 1;
         }
         if(dp[n]!=-1){
