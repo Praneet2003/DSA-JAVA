@@ -12,7 +12,7 @@ public class Level_Order_sucessor {
         for(int i=0;i<res.size()-1;i++){
             if(res.get(i)==n){
                 found = true;
-                System.out.println(res.get(i+1));
+                System.out.println(res.get(i+1));//level order sucessor is the next element of the present element, in level order traversal.
                 break;
             }
             if(n==res.get(res.size()-1)){
