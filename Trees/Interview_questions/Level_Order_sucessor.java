@@ -90,7 +90,7 @@ public class Level_Order_sucessor {
         }
         display2(node.left,level+1);
     }
-    public List<Integer> sucessor(Node root){
+    public List<Integer> sucessor(Node root){//BFS traversal (level by level)
         List<Integer> levelorder = new ArrayList<>();
         if(root==null){
             return levelorder;
