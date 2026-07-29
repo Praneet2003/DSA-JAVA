@@ -9,7 +9,7 @@ class Minimum_window_substring{
 }
 class Solution {
     public String minWindow(String s, String t) {
-        HashMap<Character,Integer> map = new HashMap<>();
+        HashMap<Character,Integer> map = new HashMap<>();//.
         for(char c: t.toCharArray()){
             map.put(c,map.getOrDefault(c,0)+1);
         }
