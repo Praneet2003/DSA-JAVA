@@ -14,8 +14,8 @@ class finding_out_maximum_element_using_stream{
         System.out.println(small);
         double avg = li.stream().mapToInt(n->n).average().orElse(0);
         System.out.println("Average: "+avg);
-        // int sum = li.stream().reduce(0,(a,b)->a+b);
-        // System.out.println(sum);
+        int sum = li.stream().reduce(0,(a,b)->a+b); 
+        System.out.println(sum);
         List<String> names = new ArrayList<>(Arrays.asList("Ramesh","Amit","Harish","Ashok"));
         String res1 = names.stream().reduce("",(a,b)->a+b);
         System.out.println(res1);
