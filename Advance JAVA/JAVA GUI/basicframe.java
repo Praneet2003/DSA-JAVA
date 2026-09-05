@@ -6,8 +6,8 @@ class basicframe extends JFrame{
     JButton b1 = new JButton("Save");
     JButton b2 = new JButton("Update");
     basicframe(){
-        setSize(400,200);//necessary
-        setVisible(true);//necessary
+        setSize(400,200);//necessary method
+        setVisible(true);//necessary method
         setTitle("Basic Student frame");
         setLocation(100,70);
         setLayout(new FlowLayout());
