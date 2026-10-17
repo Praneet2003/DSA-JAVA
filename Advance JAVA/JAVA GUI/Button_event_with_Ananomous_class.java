@@ -1,9 +1,9 @@
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-public class Button_even_with_Ananomous_class extends JFrame{
+public class Button_event_with_Ananomous_class extends JFrame{
     JButton b1  = new JButton("Click Here");
-    Button_even_with_Ananomous_class(){
+    Button_event_with_Ananomous_class(){
         setSize(500,400);
         setVisible(true);
         setLayout(new FlowLayout());
@@ -12,7 +12,7 @@ public class Button_even_with_Ananomous_class extends JFrame{
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
     public static void main(String[] args) {
-        new Button_even_with_Ananomous_class();
+        new Button_event_with_Ananomous_class();
     }
 }
 class EventHandler implements ActionListener{
