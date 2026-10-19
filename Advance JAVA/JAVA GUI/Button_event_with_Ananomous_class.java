@@ -16,7 +16,7 @@ public class Button_event_with_Ananomous_class extends JFrame{
     }
 }
 class EventHandler implements ActionListener{
-    @Override
+    @Override // abstract class method to override
     public void actionPerformed(ActionEvent e){
         JOptionPane.showMessageDialog(null, "Button Clicked");
     }
